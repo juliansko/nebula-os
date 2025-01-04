@@ -1,11 +1,10 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
-name: nebula-os
+name: nebula-os-nvidia
 description: An opinionated developer experience on the Cosmic Desktop
 
-base-image: ghcr.io/ublue-os/cosmic
-image-version: 41
-
+base-image: ghcr.io/ublue-os/cosmic-nvidia
+image-version: 41 
 
 modules:
   - from-file: modules.yml

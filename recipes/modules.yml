@@ -1,0 +1,15 @@
+modules:
+  - type: files
+    files:
+      - source: system
+        destination: /
+        
+  - type: brew
+    nofile-limits: true
+    brew-analytics: false
+
+  - from-file: packages.yml
+  - from-file: flatpaks.yml  
+  - type: signing
+  
+
